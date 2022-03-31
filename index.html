@@ -7,6 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <link rel="stylesheet" href="css/reset.css">
+    <link rel="preload" href="css/style.css">
     <link rel="stylesheet" href="css/style.css">
     <title>DrivenEats</title>
 </head>
@@ -27,7 +28,10 @@
                     <h4>Frango Yin Yang</h4>
                     <p>Um pouco de batata,</p>
                     <p>um pouco de salada</p>
-                    <h5>R$ 14,90</h5>
+                    <div class="preco">
+                        <h5>R$ 14,90</h5>
+                        <ion-icon name="checkmark-circle"></ion-icon>
+                    </div>
                 </div>
             </div>
             <div class="imagem">
@@ -203,13 +207,29 @@
                 </div>
             </div>
         </div>
+        <div class="footer">
+            <button type="submit" onclick="abrirModal('div-modal')">
+                <p>Selecione os 3 itens</p>
+                <p>para fechar o pedido</p>
+            </button>
+        </div>
+
+        <div id="div-modal" class="modal">
+            <div class="conteudo-modal">
+                <div class="topo-modal">
+                    <h2>Confirme seu pedido</h2>
+                </div>
+                <div class="body-modal"></div>
+                <div class="footer-modal">
+                    <button>Tudo certo, pode pedir!</button>
+                    <a onclick="fecharModal('div-modal')" title="Cancelar" class="cancelar">Cancelar</a>
+                </div>
+            </div>
+        </div>
     </div>
-    <div class="footer">
-        <button type="submit">
-            <p>Selecione os 3 itens</p>
-            <p>para fechar o pedido</p>
-        </button>
-    </div>
+
+    <script src="script.js"></script>
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
 </body>
 
 </html>
