@@ -88,25 +88,21 @@ button p{
     top: 65px;
     left: 0;
     padding-bottom: 100px;
-    padding-top: 27px;
+    padding-top: 109px;
 }
-.imagens{
+.produtos{
     overflow-x: scroll;
     display: flex;
     justify-content: space-between;
 }
-.preco{
-    display: flex;
-    justify-content: space-between;
-    align-items: flex-end;
-}
 ion-icon{
     color: #32B72F;
     font-size: 16px;
-    padding-right: 10px;
-    display: none;
+    float: right;
+    padding-top: 5px;
+    padding-right: 5px;
 }
-.imagem{
+.produto{
     background-color: #FFFFFF;
     width: 172px;
     height: 216px;
@@ -116,13 +112,13 @@ ion-icon{
     flex-direction: column;
     align-items: center;
 }
-.imagem:hover{
+.selecionado{
     width: 182px;
     height: 226px;
     box-shadow: 5px 5px 5px 5px lightgray;
     border: 5px solid #32B72F;
 }
-.imagem img{
+.produto img{
     width: 144px;
     height: 87px;
     margin: 15px;
@@ -135,9 +131,6 @@ ion-icon{
 .bebida{
     height: 202px;
 }
-.bebida:hover{
-    height: 212px;
-}
 .footer{
     background-color: #FFFFFF;
     width: 100%;
@@ -149,6 +142,9 @@ ion-icon{
     display: flex;
     justify-content: center;
     align-items: center;
+}
+.clicavel{
+    background-color: #32B72F;
 }
 .modal{
     width: 100vw;
