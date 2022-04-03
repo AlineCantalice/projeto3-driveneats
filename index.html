@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 
 <head>
     <meta charset="UTF-8">
@@ -13,221 +13,300 @@
 </head>
 
 <body>
+    <!-- Inicio topo -->
     <div class="topo">
         <div class="titulo">
             <h1>DrivenEats</h1>
         </div>
         <p>Sua comida em 6 minutos</p>
     </div>
+    <!-- Fim topo -->
+
+    <!-- Inicio Conteudo -->
     <div class="conteudo">
+        <!-- Inicio Pratos -->
         <h3>Primeiro, seu prato</h3>
-        <div class="imagens">
-            <div class="imagem">
+        <div class="produtos" id="prato">
+            <!-- Prato 1 -->
+            <div class="produto" onclick="escolherProduto(this)">
                 <img src="/images/frango_yin_yang 1.png">
                 <div class="texto">
                     <h4>Frango Yin Yang</h4>
                     <p>Um pouco de batata,</p>
                     <p>um pouco de salada</p>
-                    <div class="preco">
-                        <h5>R$ 14,90</h5>
-                        <ion-icon name="checkmark-circle"></ion-icon>
-                    </div>
-                </div>
-            </div>
-            <div class="imagem">
-                <img src="/images/frango_yin_yang 1.png">
-                <div class="texto">
-                    <h4>Frango Yin Yang</h4>
-                    <p>Um pouco de batata,</p>
-                    <p>um pouco de salada</p>
+                    <ion-icon class="escondido" name="checkmark-circle"></ion-icon>
                     <h5>R$ 14,90</h5>
                 </div>
             </div>
-            <div class="imagem">
-                <img src="/images/frango_yin_yang 1.png">
+            <!-- Prato 2 -->
+            <div class="produto" onclick="escolherProduto(this)">
+                <img src="/images/feijoada.jpeg">
                 <div class="texto">
-                    <h4>Frango Yin Yang</h4>
-                    <p>Um pouco de batata,</p>
-                    <p>um pouco de salada</p>
-                    <h5>R$ 14,90</h5>
+                    <h4>Fejoada Dona Benta</h4>
+                    <p>Bastante Feijão,</p>
+                    <p>com carne de porco</p>
+                    <ion-icon class="escondido" name="checkmark-circle"></ion-icon>
+                    <h5>R$ 27,90</h5>
                 </div>
             </div>
-            <div class="imagem">
-                <img src="/images/frango_yin_yang 1.png">
+            <!-- Prato 3 -->
+            <div class="produto" onclick="escolherProduto(this)">
+                <img src="/images/baiao-de-dois.jpeg">
                 <div class="texto">
-                    <h4>Frango Yin Yang</h4>
-                    <p>Um pouco de batata,</p>
-                    <p>um pouco de salada</p>
-                    <h5>R$ 14,90</h5>
+                    <h4>Baião de dois</h4>
+                    <p>Manteiga da terra,</p>
+                    <p>Receita do chefe</p>
+                    <ion-icon class="escondido" name="checkmark-circle"></ion-icon>
+                    <h5>R$ 29,99</h5>
                 </div>
             </div>
-            <div class="imagem">
-                <img src="/images/frango_yin_yang 1.png">
+            <!-- Prato 4 -->
+            <div class="produto" onclick="escolherProduto(this)">
+                <img src="/images/lasanha.jpeg">
                 <div class="texto">
-                    <h4>Frango Yin Yang</h4>
-                    <p>Um pouco de batata,</p>
-                    <p>um pouco de salada</p>
-                    <h5>R$ 14,90</h5>
+                    <h4>Lasanha</h4>
+                    <p>Cinco queijos,</p>
+                    <p>Receita italiana</p>
+                    <ion-icon class="escondido" name="checkmark-circle"></ion-icon>
+                    <h5>R$ 20,50</h5>
                 </div>
             </div>
-            <div class="imagem">
-                <img src="/images/frango_yin_yang 1.png">
+            <!-- Prato 5 -->
+            <div class="produto" onclick="escolherProduto(this)">
+                <img src="/images/cuscuz.jpeg">
                 <div class="texto">
-                    <h4>Frango Yin Yang</h4>
-                    <p>Um pouco de batata,</p>
-                    <p>um pouco de salada</p>
-                    <h5>R$ 14,90</h5>
+                    <h4>Cuscuz Recheado</h4>
+                    <p>Com carne seca,</p>
+                    <p>Batata assada</p>
+                    <ion-icon class="escondido" name="checkmark-circle"></ion-icon>
+                    <h5>R$ 19,99</h5>
                 </div>
             </div>
-            <div class="imagem">
-                <img src="/images/frango_yin_yang 1.png">
+            <!-- Prato 6 -->
+            <div class="produto" onclick="escolherProduto(this)">
+                <img src="/images/sopa.jpeg">
                 <div class="texto">
-                    <h4>Frango Yin Yang</h4>
-                    <p>Um pouco de batata,</p>
-                    <p>um pouco de salada</p>
-                    <h5>R$ 14,90</h5>
+                    <h4>Sopa de Legumas</h4>
+                    <p>Não é só legumes,</p>
+                    <p>Molho especial</p>
+                    <ion-icon class="escondido" name="checkmark-circle"></ion-icon>
+                    <h5>R$ 15,50</h5>
+                </div>
+            </div>
+            <!-- Prato 7 -->
+            <div class="produto" onclick="escolherProduto(this)">
+                <img src="/images/tapioca.jpeg">
+                <div class="texto">
+                    <h4>Tapioca Recheada</h4>
+                    <p>Seu lanche nutritivo,</p>
+                    <p>vários recheios</p>
+                    <ion-icon class="escondido" name="checkmark-circle"></ion-icon>
+                    <h5>R$ 12,90</h5>
                 </div>
             </div>
         </div>
+        <!-- Fim pratos -->
+        <!-- Inicio bebidas -->
         <h3>Agora, sua bebida</h3>
-        <div class="imagens">
-            <div class="imagem bebida">
+        <div class="produtos" id="bebidas">
+            <!-- Bebida 1 -->
+            <div class="produto bebida" onclick="escolherProduto(this)">
                 <img src="/images/coquinha_gelada 1.png">
                 <div class="texto">
                     <h4>Coquinha gelada</h4>
                     <p>Lata 350ml</p>
+                    <ion-icon class="escondido" name="checkmark-circle"></ion-icon>
                     <h5>R$ 4,90</h5>
                 </div>
             </div>
-            <div class="imagem bebida">
-                <img src="/images/coquinha_gelada 1.png">
+            <!-- Bebida 2 -->
+            <div class="produto bebida" onclick="escolherProduto(this)">
+                <img src="/images/suco-graviola.jpeg">
                 <div class="texto">
-                    <h4>Coquinha gelada</h4>
-                    <p>Lata 350ml</p>
-                    <h5>R$ 4,90</h5>
+                    <h4>Suco de Graviola</h4>
+                    <p>Copo 200ml</p>
+                    <ion-icon class="escondido" name="checkmark-circle"></ion-icon>
+                    <h5>R$ 9,90</h5>
                 </div>
             </div>
-            <div class="imagem bebida">
-                <img src="/images/coquinha_gelada 1.png">
+            <!-- Bebida 3 -->
+            <div class="produto bebida" onclick="escolherProduto(this)">
+                <img src="/images/cerveja.jpeg">
                 <div class="texto">
-                    <h4>Coquinha gelada</h4>
+                    <h4>Cerveja gelada</h4>
                     <p>Lata 350ml</p>
-                    <h5>R$ 4,90</h5>
+                    <ion-icon class="escondido" name="checkmark-circle"></ion-icon>
+                    <h5>R$ 6,90</h5>
                 </div>
             </div>
-            <div class="imagem bebida">
-                <img src="/images/coquinha_gelada 1.png">
+            <!-- Bebida 4 -->
+            <div class="produto bebida" onclick="escolherProduto(this)">
+                <img src="/images/suco-laranja.jpeg">
                 <div class="texto">
-                    <h4>Coquinha gelada</h4>
-                    <p>Lata 350ml</p>
-                    <h5>R$ 4,90</h5>
+                    <h4>Suco de Laranja</h4>
+                    <p>Copo 200ml</p>
+                    <ion-icon class="escondido" name="checkmark-circle"></ion-icon>
+                    <h5>R$ 7,90</h5>
                 </div>
             </div>
-            <div class="imagem bebida">
-                <img src="/images/coquinha_gelada 1.png">
+            <!-- Bebida 5 -->
+            <div class="produto bebida" onclick="escolherProduto(this)">
+                <img src="/images/guarana.jpeg">
                 <div class="texto">
-                    <h4>Coquinha gelada</h4>
-                    <p>Lata 350ml</p>
-                    <h5>R$ 4,90</h5>
+                    <h4>Guaraná</h4>
+                    <p>Copo 350ml</p>
+                    <ion-icon class="escondido" name="checkmark-circle"></ion-icon>
+                    <h5>R$ 5,90</h5>
                 </div>
             </div>
-            <div class="imagem bebida">
-                <img src="/images/coquinha_gelada 1.png">
+            <!-- Bebida 6 -->
+            <div class="produto bebida" onclick="escolherProduto(this)">
+                <img src="/images/vinho.jpeg">
                 <div class="texto">
-                    <h4>Coquinha gelada</h4>
-                    <p>Lata 350ml</p>
-                    <h5>R$ 4,90</h5>
+                    <h4>Vinho Tinto</h4>
+                    <p>Taça 350ml</p>
+                    <ion-icon class="escondido" name="checkmark-circle"></ion-icon>
+                    <h5>R$ 10,90</h5>
                 </div>
             </div>
-            <div class="imagem bebida">
-                <img src="/images/coquinha_gelada 1.png">
+            <!-- Bebida 7 -->
+            <div class="produto bebida" onclick="escolherProduto(this)">
+                <img src="/images/batida.jpeg">
                 <div class="texto">
-                    <h4>Coquinha gelada</h4>
-                    <p>Lata 350ml</p>
-                    <h5>R$ 4,90</h5>
+                    <h4>Coquetel</h4>
+                    <p>Copo 350ml</p>
+                    <ion-icon class="escondido" name="checkmark-circle"></ion-icon>
+                    <h5>R$ 13,90</h5>
                 </div>
             </div>
         </div>
+        <!-- Fim bebidas -->
+        <!-- Inicio sobremesa -->
         <h3>Por fim, sua sobremesa</h3>
-        <div class="imagens">
-            <div class="imagem bebida">
+        <div class="produtos" id="sobremesa">
+            <!-- Sobremesa 1 -->
+            <div class="produto bebida" onclick="escolherProduto(this)">
                 <img src="/images/pudim 1.png">
                 <div class="texto">
                     <h4>Pudim</h4>
                     <p>Apenas pudim</p>
+                    <ion-icon class="escondido" name="checkmark-circle"></ion-icon>
                     <h5>R$ 7,90</h5>
                 </div>
             </div>
-            <div class="imagem bebida">
-                <img src="/images/pudim 1.png">
+            <!-- Sobremesa 2 -->
+            <div class="produto bebida" onclick="escolherProduto(this)">
+                <img src="/images/amendoim.jpeg">
                 <div class="texto">
-                    <h4>Pudim</h4>
-                    <p>Apenas pudim</p>
-                    <h5>R$ 7,90</h5>
+                    <h4>Amendoim Crocante</h4>
+                    <p>Sabor Amendoim</p>
+                    <ion-icon class="escondido" name="checkmark-circle"></ion-icon>
+                    <h5>R$ 12,50</h5>
                 </div>
             </div>
-            <div class="imagem bebida">
-                <img src="/images/pudim 1.png">
+            <!-- Sobremesa 3 -->
+            <div class="produto bebida" onclick="escolherProduto(this)">
+                <img src="/images/bolo-cenoura.jpeg">
                 <div class="texto">
-                    <h4>Pudim</h4>
-                    <p>Apenas pudim</p>
-                    <h5>R$ 7,90</h5>
+                    <h4>Bolo de Cenoura</h4>
+                    <p>Fatia</p>
+                    <ion-icon class="escondido" name="checkmark-circle"></ion-icon>
+                    <h5>R$ 8,90</h5>
                 </div>
             </div>
-            <div class="imagem bebida">
-                <img src="/images/pudim 1.png">
+            <!-- Sobremesa 4 -->
+            <div class="produto bebida" onclick="escolherProduto(this)">
+                <img src="/images/bolo.jpeg">
                 <div class="texto">
-                    <h4>Pudim</h4>
-                    <p>Apenas pudim</p>
-                    <h5>R$ 7,90</h5>
+                    <h4>Pé de Moleque</h4>
+                    <p>Fatia</p>
+                    <ion-icon class="escondido" name="checkmark-circle"></ion-icon>
+                    <h5>R$ 9,99</h5>
                 </div>
             </div>
-            <div class="imagem bebida">
-                <img src="/images/pudim 1.png">
+            <!-- Sobremesa 5 -->
+            <div class="produto bebida" onclick="escolherProduto(this)">
+                <img src="/images/petit.jpeg">
                 <div class="texto">
-                    <h4>Pudim</h4>
-                    <p>Apenas pudim</p>
-                    <h5>R$ 7,90</h5>
+                    <h4>Petit Gateau</h4>
+                    <p>Achocolatado</p>
+                    <ion-icon class="escondido" name="checkmark-circle"></ion-icon>
+                    <h5>R$ 14,90</h5>
                 </div>
             </div>
-            <div class="imagem bebida">
-                <img src="/images/pudim 1.png">
+            <!-- Sobremesa 6 -->
+            <div class="produto bebida" onclick="escolherProduto(this)">
+                <img src="/images/tiramisu.jpeg">
                 <div class="texto">
-                    <h4>Pudim</h4>
-                    <p>Apenas pudim</p>
-                    <h5>R$ 7,90</h5>
+                    <h4>Tiramisu</h4>
+                    <p>Fatia</p>
+                    <ion-icon class="escondido" name="checkmark-circle"></ion-icon>
+                    <h5>R$ 15,90</h5>
                 </div>
             </div>
-            <div class="imagem bebida">
-                <img src="/images/pudim 1.png">
+            <!-- Sobremesa 7 -->
+            <div class="produto bebida" onclick="escolherProduto(this)">
+                <img src="/images/torta.jpeg">
                 <div class="texto">
-                    <h4>Pudim</h4>
-                    <p>Apenas pudim</p>
-                    <h5>R$ 7,90</h5>
+                    <h4>Torta de Chocolate</h4>
+                    <p>Fatia</p>
+                    <ion-icon class="escondido" name="checkmark-circle"></ion-icon>
+                    <h5>R$ 6,90</h5>
                 </div>
             </div>
         </div>
+        <!-- Fim sobremesa -->
+        <!-- Inicio footer -->
         <div class="footer">
-            <button type="submit" onclick="abrirModal('div-modal')">
+            <button onclick="chamaModal()" class="botao" type="submit">
                 <p>Selecione os 3 itens</p>
                 <p>para fechar o pedido</p>
             </button>
         </div>
-
+        <!-- Fim footer -->
+        <!-- Inicio modal -->
         <div id="div-modal" class="modal">
+            <!-- Inicio conteudo modal -->
             <div class="conteudo-modal">
+                <!-- Inicio topo modal -->
                 <div class="topo-modal">
                     <h2>Confirme seu pedido</h2>
                 </div>
-                <div class="body-modal"></div>
+                <!-- Fim topo modal -->
+                <!-- Inicio body modal -->
+                <div class="body-modal">
+                    <div class="texto-modal">
+                        <div class="prato-modal">
+                            <p>Prato</p>
+                            <p>Preço</p>
+                        </div>
+                        <div class="bebida-modal">
+                            <p>Bebida</p>
+                            <p>Preço</p>
+                        </div>
+                        <div class="sobremesa-modal">
+                            <p>Sobremesa</p>
+                            <p>Preço</p>
+                        </div>
+                        <div class="valor">
+                            <p>TOTAL</p>
+                            <p>Preço</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- Fim body modal -->
+                <!-- Inicio footer modal -->
                 <div class="footer-modal">
-                    <button>Tudo certo, pode pedir!</button>
+                    <button onclick="mandarMensagemWhatsApp()" class="botao">Tudo certo, pode pedir!</button>
                     <a onclick="fecharModal('div-modal')" title="Cancelar" class="cancelar">Cancelar</a>
                 </div>
+                <!-- Fim footer modal -->
             </div>
+            <!-- Fim conteudo modal -->
         </div>
+        <!-- Fom modal -->
     </div>
-
+    <!-- Fim conteudo -->
     <script src="script.js"></script>
     <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
 </body>
