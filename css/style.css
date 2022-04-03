@@ -1,62 +1,52 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Righteous&display=swap');
-*{
+
+* {
     box-sizing: border-box;
 }
-body{
+
+body {
     font-family: 'Roboto', sans-serif;
     font-weight: 400;
 }
-h3{
+
+h3 {
     font-family: 'Righteous', cursive;
     font-size: 26px;
     margin-top: 27px;
     margin-left: 15px;
     margin-bottom: 10px;
-    color:#333333;
+    color: #333333;
 }
-h4{
+
+h4 {
     color: #333333;
     font-size: 16px;
     padding-bottom: 10px;
 }
-h5{    
+
+h5 {
     color: #000000;
     font-size: 15px;
     padding-top: 10px;
 }
-p{
+
+p {
     color: #A6A6A6;
     font-size: 16px;
     padding-bottom: 3px;
 }
-a{
+
+a {
     text-decoration: none;
     color: #FFFFFF;
     font-size: 20px;
     padding-top: 10px;
 }
-button{
-    width: 90%;
-    height: 61px;
-    border-radius: 50px;
-    border: 1px solid #CBCBCB;
-    background-color: #CBCBCB;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
-button:active{
-    background-color: #32B72F;
-}
-button p{
-    font-size: 20px;
-    color: #FFFFFF;
-}
-.topo{
+
+.topo {
     background-color: #CF2B2B;
-    color:#FFFFFF;
+    color: #FFFFFF;
     width: 100%;
     height: 92px;
     display: flex;
@@ -65,23 +55,28 @@ button p{
     position: fixed;
     left: 0;
     top: 0;
-    box-shadow: 0 5px 10px rgba(0,0,0,0.3);
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
     z-index: 1;
+    padding-bottom: 18px;
 }
-.topo p{
-    color:#FFFFFF;
+
+.topo p {
+    color: #FFFFFF;
 }
-.titulo{
+
+.titulo {
     font-family: 'Righteous', cursive;
     font-size: 44px;
     margin-left: 15px;
     margin-top: 27px;
 }
-.topo p{
+
+.topo p {
     font-size: 18px;
     margin-left: 15px;
 }
-.conteudo{
+
+.conteudo {
     background-color: #E5E5E5;
     width: 100%;
     height: 100%;
@@ -90,19 +85,26 @@ button p{
     padding-bottom: 100px;
     padding-top: 109px;
 }
-.produtos{
+
+.produtos {
     overflow-x: scroll;
     display: flex;
     justify-content: space-between;
 }
-ion-icon{
+
+.escondido {
+    display: none;
+}
+
+.mostrar {
     color: #32B72F;
     font-size: 16px;
     float: right;
     padding-top: 5px;
     padding-right: 5px;
 }
-.produto{
+
+.produto {
     background-color: #FFFFFF;
     width: 172px;
     height: 216px;
@@ -112,26 +114,31 @@ ion-icon{
     flex-direction: column;
     align-items: center;
 }
-.selecionado{
+
+.selecionado {
     width: 182px;
     height: 226px;
-    box-shadow: 5px 5px 5px 5px lightgray;
+    box-shadow: 2px 2px 10px 5px #CBCBCB;
     border: 5px solid #32B72F;
 }
-.produto img{
+
+.produto img {
     width: 144px;
     height: 87px;
     margin: 15px;
     border-radius: 4px;
 }
-.texto{
+
+.texto {
     width: 100%;
     padding-left: 15px;
 }
-.bebida{
+
+.bebida {
     height: 202px;
 }
-.footer{
+
+.footer {
     background-color: #FFFFFF;
     width: 100%;
     height: 92px;
@@ -143,10 +150,31 @@ ion-icon{
     justify-content: center;
     align-items: center;
 }
-.clicavel{
-    background-color: #32B72F;
+
+.botao {
+    width: 90%;
+    height: 61px;
+    border-radius: 50px;
+    border: 1px solid #CBCBCB;
+    background-color: #CBCBCB;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
-.modal{
+
+.botao p {
+    font-size: 20px;
+    color: #FFFFFF;
+}
+
+.ativado {
+    background-color: #32B72F;
+    color: #FFFFFF;
+    font-size: 20px;
+}
+
+.modal {
     width: 100vw;
     height: 100hw;
     background: rgba(255, 255, 255, 0.9);
@@ -161,7 +189,8 @@ ion-icon{
     z-index: 2;
     display: none;
 }
-.conteudo-modal{
+
+.conteudo-modal {
     max-width: 377px;
     height: 353px;
     margin: 50% 5%;
@@ -169,25 +198,50 @@ ion-icon{
     border-radius: 9px;
     box-shadow: 0px 0px 10px 1px rgba(0, 0, 0, 0.25);
 }
-.topo-modal{
+
+.topo-modal {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 76px;
+    height: 70px;
     width: 100%;
 }
-.body-modal{
-    height: 165px;
+
+.body-modal {
+    height: 175px;
     width: 100%;
 }
-.footer-modal{
+
+.texto-modal {
+    height: 100%;
+    margin: 0 15px;
+}
+
+.texto-modal div {
+    display: flex;
+    justify-content: space-between;
+}
+
+.texto-modal p {
+    font-size: 22px;
+    color: #FFFFFF;
+    font-weight: 400;
+    margin-top: 15px;
+}
+
+.valor p {
+    font-weight: 700;
+}
+
+.footer-modal {
     display: flex;
     flex-direction: column;
     align-items: center;
     height: 100px;
     width: 100%;
 }
-.footer-modal button{
+
+.footer-modal button {
     background-color: #FFFFFF;
     height: 52px;
     font-size: 22px;
