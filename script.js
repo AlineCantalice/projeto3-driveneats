@@ -9,7 +9,7 @@ let valor;
 /*
 *  FUNCAO RESPONSAVEL POR ABRIR O MODAL
 */
-function abrirModal(nomeModal, prato, bebida, sobremesa) {
+function abrirModal(nomeModal) {
 
     //Recupera os elementos da tela
     let modal = document.getElementById(nomeModal);
@@ -18,10 +18,10 @@ function abrirModal(nomeModal, prato, bebida, sobremesa) {
     let nomeSobremesa = sobremesa.getElementsByTagName('h4')[0].innerText;
 
     //Verifica se o modal existe 
-    if (typeof modal == 'undefined' || modal === null) {
+    if (typeof modal === 'undefined' || modal === null) {
         return;
     }
-    
+
     //Recupera o preco dos produtos
     const precoPrato = Number(prato.getElementsByTagName('h5')[0].innerText.replace(',', '.').substr(3, 10)).toFixed(2);
     const precoBebida = Number(bebida.getElementsByTagName('h5')[0].innerText.replace(',', '.').substr(3, 10)).toFixed(2);
@@ -57,7 +57,7 @@ function fecharModal(nomeModal) {
     let modal = document.getElementById(nomeModal);
 
     //Verifica se o modal existe 
-    if (typeof modal == 'undefined' || modal === null) {
+    if (typeof modal === 'undefined' || modal === null) {
         return;
     }
 
@@ -83,7 +83,7 @@ function escolherProduto(elemento) {
             sobremesa = selecionarProduto(elementoPai, elemento);
             break;
     }
-    ativarBotao(prato, bebida, sobremesa);
+    ativarBotao();
 }
 
 /*
@@ -118,7 +118,7 @@ function selecionarProduto(elementoPai, elemento) {
 *   FUNCAO RESPONSAVEL POR VERIFICAR SE TRES ITENS FORAM SELECIONADOS 
 *   E AIVAR O BOTAO ATRIBUINDO A CLASSE, RETORNA UM BOOLEAN
 */
-function ativarBotao(prato, bebida, sobremesa) {
+function ativarBotao() {
     const button = document.querySelector(".botao");
     button.disable = true;
     if (prato && bebida && sobremesa) {
@@ -135,8 +135,8 @@ function ativarBotao(prato, bebida, sobremesa) {
 *   UTILIZA O RETORNO DE ATIVARBOTAO()
 */
 function chamaModal() {
-    if (ativarBotao(prato, bebida, sobremesa)) {
-        abrirModal("div-modal", prato, bebida, sobremesa);
+    if (ativarBotao()) {
+        abrirModal("div-modal",);
     }
 }
 
@@ -158,6 +158,6 @@ function mandarMensagemWhatsApp() {
     let mensagem = `Olá, gostaria de fazer o pedido: \n- Prato: ${nomePrato}\n - Bebida: ${nomeBebida}\n - Sobremesa: ${nomeSobremesa}\n Total: R$ ${valor.toFixed(2).replace('.', ',')} \n\nNome: ${nome} \nEndereço: ${endereco}`;
     //Permite que a mensagem se mantenha na formatacao dada
     mensagem = window.encodeURIComponent(mensagem);
-    //Abre a pagina do whatsapp web
+    //Abre a pagina do whatsapp web - inserir numero valido para teste
     window.open(`https://wa.me/+5599999999999?text=${mensagem}`);
 }
